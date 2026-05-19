@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "activity-log",
+    "label": "Activity Log"
+  },
+  {
+    "slug": "ai",
+    "label": "AI Notes"
+  },
+  {
+    "slug": "unity",
+    "label": "Unity Memos"
+  },
+  {
+    "slug": "reviews",
+    "label": "Reviews"
+  },
+  {
+    "slug": "creative",
+    "label": "Creative Experiments"
+  }
+]

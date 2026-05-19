@@ -1,0 +1,7 @@
+{
+  "name": "sukidukinn.blog",
+  "title": "Activity log, hobby posts, and experiments",
+  "description": "Static placeholder data for the blog-side website.",
+  "tone": "casual, flexible, experimental",
+  "publishingStyle": "simple static files without Node.js"
+}

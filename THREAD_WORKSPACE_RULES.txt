@@ -1,0 +1,45 @@
+This thread is restricted to one workspace root only:
+C:\Menu\tool\codex\sukidukinn_web
+
+Allowed:
+- Read and edit files only under the path above
+- Manage the web project for sukidukinn.com inside this workspace
+
+Not allowed:
+- Touch sibling folders or parent-level project files
+- Use the Unity project folder
+- Scatter web assets outside this workspace
+
+Current web project folder:
+C:\Menu\tool\codex\sukidukinn_web\sukidukinn.com
+
+Secondary blog project folder:
+C:\Menu\tool\codex\sukidukinn_web\sukidukinn.blog
+
+GitHub repository:
+https://github.com/sukidukinn/webapp
+
+Suggested Vercel root directories:
+- sukidukinn.com
+- sukidukinn.blog
+
+Site direction summary:
+- sukidukinn.com = official site, portfolio, contact entry point, business card QR landing page
+- sukidukinn.blog = activity log, hobby posts, experiments
+- Prioritize light, simple, trustworthy, mobile-first pages
+- First practical release target is /card
+
+Primary routes:
+- /
+- /card
+- /profile
+- /works
+- /services
+- /links
+- /contact
+
+Central data files:
+- data/profile.ts
+- data/links.ts
+- data/works.ts
+- data/affiliate.ts

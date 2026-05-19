@@ -1,0 +1,60 @@
+:root {
+  color-scheme: light;
+  --bg: #f3efe8;
+  --surface: #fffcf6;
+  --text: #2b241f;
+  --muted: #6f6257;
+  --line: #ddd2c5;
+  --accent: #6b5140;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Yu Gothic UI", "Hiragino Sans", sans-serif;
+  background: linear-gradient(180deg, #f7f1e8 0%, #efe7db 100%);
+  color: var(--text);
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+.inner {
+  width: min(880px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 56px 0 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lead {
+  max-width: 40rem;
+  color: var(--muted);
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 24px;
+  margin: 20px 0;
+}
+
+.post-list {
+  padding-left: 20px;
+}

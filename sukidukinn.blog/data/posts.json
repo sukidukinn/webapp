@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "welcome",
+    "title": "Welcome post placeholder",
+    "category": "activity-log",
+    "date": "2026-05-19",
+    "summary": "Placeholder entry for the blog top."
+  },
+  {
+    "slug": "ai-notes",
+    "title": "AI notes placeholder",
+    "category": "ai",
+    "date": "2026-05-19",
+    "summary": "Placeholder entry for AI experiments and prompt notes."
+  },
+  {
+    "slug": "review-placeholder",
+    "title": "Review placeholder",
+    "category": "reviews",
+    "date": "2026-05-19",
+    "summary": "Placeholder entry for review-style posts and affiliate-ready notes."
+  }
+]

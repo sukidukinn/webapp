@@ -1,0 +1,23 @@
+# OS
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Node
+node_modules/
+.next/
+dist/
+build/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel/
+
+# Misc
+coverage/

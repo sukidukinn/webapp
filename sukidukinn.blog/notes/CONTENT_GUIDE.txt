@@ -1,0 +1,7 @@
+Blog-side content guidance:
+
+- Use this site for quick updates, experiments, hobby posts, reviews, and logs.
+- Keep the tone freer than the official .com site.
+- Review and recommendation posts can live here more naturally.
+- Amazon affiliate use should stay tied to real reviews and actual use.
+- Prefer lightweight manual editing and static hosting.

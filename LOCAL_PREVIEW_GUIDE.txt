@@ -1,0 +1,19 @@
+Local preview guide
+
+1. Official site: C:\Menu\tool\codex\sukidukinn_web\sukidukinn.com
+- Install dependencies: npm install
+- Start dev server: npm run dev
+- Open: http://localhost:3000
+- Production check: npm run build
+
+2. Blog site: C:\Menu\tool\codex\sukidukinn_web\sukidukinn.blog
+- Option A: open index.html directly in a browser
+- Option B: run a simple static server
+- Example with Python:
+  python -m http.server 8000
+- Then open:
+  http://localhost:8000
+
+3. Vercel dashboard idea
+- Project A root directory: sukidukinn.com
+- Project B root directory: sukidukinn.blog

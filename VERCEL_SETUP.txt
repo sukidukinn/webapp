@@ -1,0 +1,26 @@
+Vercel setup note for repository:
+https://github.com/sukidukinn/webapp
+
+Recommended project split:
+
+1. Official site project
+- Project name example: sukidukinn-com
+- Root Directory: sukidukinn.com
+- Framework Preset: Next.js
+
+2. Blog project
+- Project name example: sukidukinn-blog
+- Root Directory: sukidukinn.blog
+- Framework Preset: Other
+
+Important:
+- Both projects can use the same GitHub repository.
+- The root directory setting decides which folder Vercel deploys.
+- Keep .com and .blog separate even though they live in one repo.
+
+Current local workspace root:
+C:\Menu\tool\codex\sukidukinn_web
+
+Current site folders:
+- C:\Menu\tool\codex\sukidukinn_web\sukidukinn.com
+- C:\Menu\tool\codex\sukidukinn_web\sukidukinn.blog
