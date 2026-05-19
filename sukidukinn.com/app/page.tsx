@@ -1,41 +1,99 @@
+import Link from "next/link";
 import { links } from "../data/links";
 import { profile } from "../data/profile";
 import { works } from "../data/works";
 
 export default function HomePage() {
   return (
-    <main>
-      <h1>{profile.name}</h1>
-      <p>{profile.title}</p>
-      <p>{profile.summary}</p>
-
-      <section>
-        <h2>Representative categories</h2>
-        <ul>
-          {profile.categories.map((category) => (
-            <li key={category}>{category}</li>
-          ))}
-        </ul>
+    <main className="page-stack">
+      <section className="hero-card">
+        <p className="eyebrow">Official site</p>
+        <h1 className="page-title">{profile.name}</h1>
+        <p className="page-subtitle">{profile.title}</p>
+        <p className="lead-text">{profile.summary}</p>
+        <div className="button-row">
+          <Link className="button-link" href="/card">
+            名刺QR向けページを見る
+          </Link>
+          <Link className="button-link secondary" href="/works">
+            代表作品を見る
+          </Link>
+          <Link className="button-link secondary" href="/contact">
+            相談先を確認する
+          </Link>
+        </div>
       </section>
 
-      <section>
-        <h2>Featured works</h2>
-        <ul>
+      <section className="section-grid">
+        <div className="panel-card">
+          <h2>何をしている人か</h2>
+          <p>{profile.shortBio}</p>
+        </div>
+        <div className="card-grid">
+          {profile.categories.map((category) => (
+            <article className="panel-card" key={category.name}>
+              <h3>{category.name}</h3>
+              <p className="muted">{category.summary}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="card-grid">
+        <article className="cta-card">
+          <h2>仕事・相談</h2>
+          <p className="muted">
+            依頼前に全体像を掴みたい場合は、まずプロフィールと代表作品を見るのがおすすめです。
+          </p>
+          <div className="button-row">
+            <Link className="button-link" href="/profile">
+              プロフィールを見る
+            </Link>
+            <Link className="button-link secondary" href="/contact">
+              問い合わせ先を見る
+            </Link>
+          </div>
+        </article>
+        <article className="cta-card">
+          <h2>活動ログ</h2>
+          <p className="muted">
+            日々の記録、実験メモ、趣味寄りの投稿は blog 側で分けて管理しています。
+          </p>
+          <div className="button-row">
+            <a
+              className="button-link secondary"
+              href="https://sukidukinn.blog/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              sukidukinn.blog を開く
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section className="panel-card">
+        <h2>代表作品</h2>
+        <ul className="compact-list">
           {works.slice(0, 3).map((work) => (
             <li key={work.slug}>
-              {work.title} - {work.category}
+              <strong>{work.title}</strong>
+              <div className="muted">
+                {work.category} / {work.summary}
+              </div>
             </li>
           ))}
         </ul>
       </section>
 
-      <section>
-        <h2>Official links</h2>
-        <ul>
-          {links.slice(0, 4).map((link) => (
+      <section className="panel-card">
+        <h2>公式リンク</h2>
+        <ul className="compact-list">
+          {links.map((link) => (
             <li key={link.label}>
               <a href={link.href} target="_blank" rel="noopener noreferrer">
-                {link.label}
+                <strong>{link.label}</strong>
+                <div className="muted">{link.description}</div>
               </a>
             </li>
           ))}
