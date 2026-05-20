@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { PageNavigation } from "../components/ui/PageNavigation";
+import { PlaceholderChecklist } from "../components/ui/PlaceholderChecklist";
+import { TemplateNotice } from "../components/ui/TemplateNotice";
 import { links } from "../data/links";
 import { profile } from "../data/profile";
 import { works } from "../data/works";
@@ -6,6 +9,8 @@ import { works } from "../data/works";
 export default function HomePage() {
   return (
     <main className="page-stack">
+      <TemplateNotice />
+
       <section className="hero-card">
         <p className="eyebrow">Official site</p>
         <h1 className="page-title">{profile.name}</h1>
@@ -99,6 +104,18 @@ export default function HomePage() {
           ))}
         </ul>
       </section>
+
+      <PlaceholderChecklist
+        title="トップページで後から差し込むもの"
+        items={[
+          "プロフィール写真またはロゴ",
+          "代表作品3件の実データ",
+          "正式なSNS / note / YouTubeリンク",
+          "問い合わせ用の実URL",
+        ]}
+      />
+
+      <PageNavigation currentPath="/" />
     </main>
   );
 }

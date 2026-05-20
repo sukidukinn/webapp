@@ -1,9 +1,14 @@
 import Link from "next/link";
+import { PageNavigation } from "../../components/ui/PageNavigation";
+import { PlaceholderChecklist } from "../../components/ui/PlaceholderChecklist";
+import { TemplateNotice } from "../../components/ui/TemplateNotice";
 import { profile } from "../../data/profile";
 
 export default function CardPage() {
   return (
     <main className="page-stack">
+      <TemplateNotice />
+
       <section className="hero-card">
         <p className="eyebrow">Business card</p>
         <h1 className="page-title">{profile.name}</h1>
@@ -71,6 +76,35 @@ export default function CardPage() {
           </p>
         </article>
       </section>
+
+      <section className="card-grid">
+        <article className="panel-card">
+          <h2>QRコード差し込み枠</h2>
+          <p className="muted">
+            ここには名刺に載せるQRコード画像、または短縮URLの説明を差し込みます。
+          </p>
+          <p className="status-note">画像素材待ち</p>
+        </article>
+        <article className="panel-card">
+          <h2>一画面目の優先情報</h2>
+          <p className="muted">
+            名前、肩書き、代表導線、問い合わせ先だけを残し、細かい情報は下層ページへ逃がします。
+          </p>
+          <p className="status-note">構成固定済み</p>
+        </article>
+      </section>
+
+      <PlaceholderChecklist
+        title="このページで後から差し込むもの"
+        items={[
+          "名刺QRコード画像",
+          "本番のメールアドレス",
+          "本番のXアカウントURL",
+          "本番のblog / GitHub導線",
+        ]}
+      />
+
+      <PageNavigation currentPath="/card" />
     </main>
   );
 }

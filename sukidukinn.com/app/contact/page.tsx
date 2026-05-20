@@ -1,8 +1,13 @@
+import { PageNavigation } from "../../components/ui/PageNavigation";
+import { PlaceholderChecklist } from "../../components/ui/PlaceholderChecklist";
+import { TemplateNotice } from "../../components/ui/TemplateNotice";
 import { profile } from "../../data/profile";
 
 export default function ContactPage() {
   return (
     <main className="page-stack">
+      <TemplateNotice />
+
       <section className="hero-card">
         <p className="eyebrow">Contact</p>
         <h1 className="page-title">問い合わせ</h1>
@@ -57,6 +62,18 @@ export default function ContactPage() {
           <p className="muted">決済や受付の外部導線を後から追加できます。</p>
         </article>
       </section>
+
+      <PlaceholderChecklist
+        title="問い合わせページで後から差し込むもの"
+        items={[
+          "本番のメールアドレス",
+          "GoogleフォームURL",
+          "ココナラや外部受付URL",
+          "連絡時に添えてほしい情報の案内",
+        ]}
+      />
+
+      <PageNavigation currentPath="/contact" />
     </main>
   );
 }

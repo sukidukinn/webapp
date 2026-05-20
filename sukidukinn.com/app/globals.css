@@ -91,6 +91,13 @@ ul {
   gap: 24px;
 }
 
+.template-note {
+  padding: 16px 18px;
+  border: 1px dashed var(--accent);
+  border-radius: 18px;
+  background: #fff9ef;
+}
+
 .hero-card,
 .panel-card,
 .cta-card {
@@ -153,6 +160,12 @@ ul {
   margin-top: 0;
 }
 
+.panel-card p:last-child,
+.cta-card p:last-child,
+.template-note p:last-child {
+  margin-bottom: 0;
+}
+
 .block-link {
   display: block;
 }
@@ -212,6 +225,10 @@ ul {
   border: 1px solid var(--line);
   border-radius: 16px;
   background: #fffaf3;
+}
+
+.compact-list li strong {
+  display: block;
 }
 
 .status-note {

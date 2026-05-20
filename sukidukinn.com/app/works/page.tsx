@@ -1,9 +1,14 @@
+import { PageNavigation } from "../../components/ui/PageNavigation";
+import { PlaceholderChecklist } from "../../components/ui/PlaceholderChecklist";
+import { TemplateNotice } from "../../components/ui/TemplateNotice";
 import { WorkCard } from "../../components/ui/WorkCard";
 import { works } from "../../data/works";
 
 export default function WorksPage() {
   return (
     <main className="page-stack">
+      <TemplateNotice />
+
       <section className="hero-card">
         <p className="eyebrow">Works</p>
         <h1 className="page-title">代表作品</h1>
@@ -23,6 +28,18 @@ export default function WorksPage() {
           />
         ))}
       </section>
+
+      <PlaceholderChecklist
+        title="作品ページで後から差し込むもの"
+        items={[
+          "代表作品ごとの画像",
+          "作品タイトルの正式名称",
+          "実績リンクや販売ページ",
+          "役割、使用技術、公開年",
+        ]}
+      />
+
+      <PageNavigation currentPath="/works" />
     </main>
   );
 }
