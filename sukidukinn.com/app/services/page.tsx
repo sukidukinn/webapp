@@ -1,8 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { PageNavigation } from "../../components/ui/PageNavigation";
 import { PlaceholderChecklist } from "../../components/ui/PlaceholderChecklist";
 import { TemplateNotice } from "../../components/ui/TemplateNotice";
 import { services } from "../../data/services";
+
+export const metadata: Metadata = {
+  title: "依頼・相談",
+  description:
+    "相談、Webページ制作、創作支援などの依頼導線を案内するページです。",
+};
 
 export default function ServicesPage() {
   return (

@@ -1,4 +1,8 @@
 export function TemplateNotice() {
+  if (process.env.NODE_ENV !== "development") {
+    return null;
+  }
+
   return (
     <section className="template-note" aria-label="Template mode notice">
       <strong>テンプレート運用中</strong>

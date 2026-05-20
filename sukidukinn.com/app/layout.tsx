@@ -4,8 +4,12 @@ import type { ReactNode } from "react";
 import { SiteShell } from "../components/layout/SiteShell";
 
 export const metadata: Metadata = {
-  title: "sukidukinn.com",
-  description: "Official site scaffold for sukidukinn.com",
+  title: {
+    default: "sukidukinn.com",
+    template: "%s | sukidukinn.com",
+  },
+  description:
+    "公式プロフィール、代表作品、相談先を整理して案内する sukidukinn.com の公式サイトです。",
 };
 
 export default function RootLayout({

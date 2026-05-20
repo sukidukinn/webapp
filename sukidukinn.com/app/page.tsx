@@ -1,10 +1,17 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { PageNavigation } from "../components/ui/PageNavigation";
 import { PlaceholderChecklist } from "../components/ui/PlaceholderChecklist";
 import { TemplateNotice } from "../components/ui/TemplateNotice";
 import { links } from "../data/links";
 import { profile } from "../data/profile";
 import { works } from "../data/works";
+
+export const metadata: Metadata = {
+  title: "トップ",
+  description:
+    "sukidukinn の公式トップページです。プロフィール、代表作品、相談先への導線をまとめています。",
+};
 
 export default function HomePage() {
   return (

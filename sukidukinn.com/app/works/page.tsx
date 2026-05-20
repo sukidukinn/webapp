@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import { PageNavigation } from "../../components/ui/PageNavigation";
 import { PlaceholderChecklist } from "../../components/ui/PlaceholderChecklist";
 import { TemplateNotice } from "../../components/ui/TemplateNotice";
 import { WorkCard } from "../../components/ui/WorkCard";
 import { works } from "../../data/works";
+
+export const metadata: Metadata = {
+  title: "代表作品",
+  description:
+    "Unity、書籍、漫画、Web制作などの代表作品を整理して掲載するページです。",
+};
 
 export default function WorksPage() {
   return (

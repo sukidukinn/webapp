@@ -11,6 +11,7 @@ export function SiteHeader() {
           <Link href="/card">card</Link>
           <Link href="/profile">profile</Link>
           <Link href="/works">works</Link>
+          <Link href="/services">services</Link>
           <Link href="/links">links</Link>
           <Link href="/contact">contact</Link>
         </nav>

@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import { LinkCard } from "../../components/ui/LinkCard";
 import { PageNavigation } from "../../components/ui/PageNavigation";
 import { PlaceholderChecklist } from "../../components/ui/PlaceholderChecklist";
 import { TemplateNotice } from "../../components/ui/TemplateNotice";
 import { links } from "../../data/links";
+
+export const metadata: Metadata = {
+  title: "公式リンク",
+  description:
+    "SNS、文章、動画、開発、活動ログへの公式リンクをまとめたページです。",
+};
 
 export default function LinksPage() {
   return (

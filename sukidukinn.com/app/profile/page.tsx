@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import { PageNavigation } from "../../components/ui/PageNavigation";
 import { PlaceholderChecklist } from "../../components/ui/PlaceholderChecklist";
 import { TemplateNotice } from "../../components/ui/TemplateNotice";
 import { profile } from "../../data/profile";
+
+export const metadata: Metadata = {
+  title: "プロフィール",
+  description:
+    "sukidukinn の公式プロフィールページです。活動領域と自己紹介を整理して掲載します。",
+};
 
 export default function ProfilePage() {
   return (

@@ -1,8 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { PageNavigation } from "../../components/ui/PageNavigation";
 import { PlaceholderChecklist } from "../../components/ui/PlaceholderChecklist";
 import { TemplateNotice } from "../../components/ui/TemplateNotice";
 import { profile } from "../../data/profile";
+
+export const metadata: Metadata = {
+  title: "名刺QRページ",
+  description:
+    "名刺QRからアクセスした方向けの案内ページです。プロフィール、作品、問い合わせ先への導線をまとめています。",
+};
 
 export default function CardPage() {
   return (
