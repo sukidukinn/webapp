@@ -153,6 +153,10 @@ ul {
   margin-top: 0;
 }
 
+.block-link {
+  display: block;
+}
+
 .button-row {
   display: flex;
   flex-wrap: wrap;
@@ -208,6 +212,12 @@ ul {
   border: 1px solid var(--line);
   border-radius: 16px;
   background: #fffaf3;
+}
+
+.status-note {
+  margin: 14px 0 0;
+  color: var(--accent);
+  font-size: 0.92rem;
 }
 
 @media (max-width: 720px) {

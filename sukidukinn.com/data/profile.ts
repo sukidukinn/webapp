@@ -1,3 +1,8 @@
+export type ProfileCategory = {
+  name: string;
+  summary: string;
+};
+
 export const profile = {
   name: "sukidukinn",
   title: "創作と開発を横断する制作者",
@@ -24,7 +29,7 @@ export const profile = {
       name: "Web制作",
       summary: "公式サイトや導線設計など、実務寄りの制作内容を示します。",
     },
-  ],
+  ] satisfies ProfileCategory[],
   contact: {
     email: "contact@example.com",
     emailNote: "公開用メールに差し替え予定",
@@ -32,5 +37,7 @@ export const profile = {
     xUrl: "https://x.com/",
     blogUrl: "https://sukidukinn.blog/",
     githubUrl: "https://github.com/sukidukinn",
+    formUrl: "#",
+    coconalaUrl: "#",
   },
 };

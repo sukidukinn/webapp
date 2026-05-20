@@ -1,4 +1,11 @@
-export const links = [
+export type LinkItem = {
+  label: string;
+  href: string;
+  category: string;
+  description: string;
+};
+
+export const links: LinkItem[] = [
   {
     label: "X",
     href: "https://x.com/",

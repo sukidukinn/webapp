@@ -6,9 +6,14 @@ type LinkCardProps = {
 
 export function LinkCard({ label, href, description }: LinkCardProps) {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a
+      className="panel-card block-link"
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <strong>{label}</strong>
-      {description ? <p>{description}</p> : null}
+      {description ? <p className="muted">{description}</p> : null}
     </a>
   );
 }

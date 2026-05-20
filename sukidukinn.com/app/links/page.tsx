@@ -1,3 +1,4 @@
+import { LinkCard } from "../../components/ui/LinkCard";
 import { links } from "../../data/links";
 
 export default function LinksPage() {
@@ -10,16 +11,16 @@ export default function LinksPage() {
           SNS、文章、動画、開発まわりの公式導線をまとめています。
         </p>
       </section>
-      <ul className="compact-list">
+      <section className="card-grid">
         {links.map((link) => (
-          <li key={link.label}>
-            <a href={link.href} target="_blank" rel="noopener noreferrer">
-              <strong>{link.label}</strong>
-              <div className="muted">{link.description}</div>
-            </a>
-          </li>
+          <LinkCard
+            key={link.label}
+            label={link.label}
+            href={link.href}
+            description={link.description}
+          />
         ))}
-      </ul>
+      </section>
     </main>
   );
 }
